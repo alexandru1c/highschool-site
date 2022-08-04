@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Liceul Tehnologic "Petrache Poenaru"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+<img src="ltpp.png"style="position:absolute;left:80em;top:1em;"width="300"height="200">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Harta site-ului</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-16"><b><center>Liceul Tehnologic</center>"Petrache Poenaru"</b></h3> 
+  </div>
+  <div><p style="margin-left:1.6cm; margin-top:0;padding-top:0; color:rgb(48, 53, 63)">harta site-ului</p></div>
+  <div><hr style="background-color:white;"></div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Acasă</a> 
+    <div><hr style="background-color:white;"></div>
+    <div><p align="center"style="padding-top:0; color:rgb(48, 53, 63)">Resurse</p></div>
+    <a href="prezentare.pptx" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Prezentarea liceului nostru</a>
+    <a href="plan.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Planul de actiune al școlii (2014-2020)</a>
+    <a href="pliant.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Oferta educațională - școala profesională</a>
+    <a href="roi.pdf" target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Regulament de ordine interioară</a>
+    <a href="statut.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Statutul Elevului</a> 
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Liceul Tehnologic "Petrache Poenaru"</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:40px" id="showcase">
+     <h1 class="w3-jumbo"><b style="font-size:40px">Liceul Tehnologic "Petrache Poenaru" Bălcești</b></h1>
+
+
+
+    <h1 class="w3-xxlarge w3-text-red"><b>Galerie</b></h1>
+    <hr style="width:1250px;border:1px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="galerie/1.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză cu copiii gradiniței"> 
+      <img src="galerie/2.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup"> 
+      <img src="galerie/3.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup"> 
+      <img src="galerie/4.jpeg" style="width:100%" onclick="onClick(this)" alt="Imaginea liceului nostru">
+      <img src="galerie/5.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup"> 
+      <img src="galerie/6.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment 1 Decembrie"> 
+      <img src="galerie/7.jpeg" style="width:100%" onclick="onClick(this)" alt="Echipa de fotbal a liceului">
+      <img src="galerie/8.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup"> 
+      <img src="galerie/9.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional"> 
+      <img src="galerie/10.jpeg" style="width:100%" onclick="onClick(this)" alt="Intrarea in liceul nostru">
+      <img src="galerie/11.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional"> 
+      <img src="galerie/12.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional"> 
+      <img src="galerie/13.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment traditional">
+      <img src="galerie/14.jpeg" style="width:100%" onclick="onClick(this)" alt="Prezentare"> 
+      <img src="galerie/15.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment traditional"> 
+      <img src="galerie/16.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup">
+      <img src="galerie/17.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup"> 
+      <img src="galerie/18.jpeg" style="width:100%" onclick="onClick(this)" alt="Inceputul anului scolar 2018-2019"> 
+      <img src="galerie/19.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional">
+      <img src="galerie/20.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional"> 
+      <img src="galerie/21.jpeg" style="width:100%" onclick="onClick(this)" alt="Petrache Poenaru"> 
+      <img src="galerie/22.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup">
+      <img src="galerie/23.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/24.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa Mică"> 
+      <img src="galerie/25.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa Mică">
+      <img src="galerie/26.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment Halloween"> 
+      <img src="galerie/27.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa Mica"> 
+      <img src="galerie/28.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment traditional">
+      <img src="galerie/29.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup cu conducerea liceului"> 
+      <img src="galerie/30.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup - călușari"> 
+      <img src="galerie/31.jpeg" style="width:100%" onclick="onClick(this)" alt="Prezentare">
+      <img src="galerie/33.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment traditional"> 
+      <img src="galerie/34.jpeg" style="width:100%" onclick="onClick(this)" alt="Liceul nostru">
+
+    </div>
+
+    <div class="w3-half">
+      <img src="galerie/43.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup cu conducerea liceului">
+      <img src="galerie/45.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/46.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză cu copiii gradiniței">
+      <img src="galerie/47.jpeg" style="width:100%" onclick="onClick(this)" alt="Bradul nostru!"> 
+      <img src="galerie/48.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/49.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup cu conducerea liceului">
+      <img src="galerie/50.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup cu conducerea liceului"> 
+      <img src="galerie/51.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/52.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup ">
+      <img src="galerie/53.jpeg" style="width:100%" onclick="onClick(this)" alt="Activitate 1 Decembrie"> 
+      <img src="galerie/54.jpeg" style="width:100%" onclick="onClick(this)" alt="Activitate 1 Decembrie"> 
+      <img src="galerie/55.jpeg" style="width:100%" onclick="onClick(this)" alt="Poza de grup - eveniment tradițional">
+      <img src="galerie/57.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/58.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment tradțional">
+      <img src="galerie/59.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment lingvistic"> 
+      <img src="galerie/60.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment științific"> 
+      <img src="galerie/61.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment tradițional">
+      <img src="galerie/62.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment benefic dezvolării viitoare"> 
+      <img src="galerie/63.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup"> 
+      <img src="galerie/64.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa mică">
+      <img src="galerie/66.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup - eveniment tradițional"> 
+      <img src="galerie/67.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză de grup - eveniment tradițional">
+      <img src="galerie/68.jpeg" style="width:100%" onclick="onClick(this)" alt="Liceul nostru"> 
+      <img src="galerie/69.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment tradițional"> 
+      <img src="galerie/71.jpeg" style="width:100%" onclick="onClick(this)" alt="Imagine cu elevii liceului"> 
+      <img src="galerie/72.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment 1 Decembrie"> 
+      <img src="galerie/73.jpeg" style="width:100%" onclick="onClick(this)" alt="Călușarii"> 
+      <img src="galerie/77.jpeg" style="width:100%" onclick="onClick(this)" alt="Poză cu elevii liceului participanți la concursul de matematică din Vidin">  
+      <img src="galerie/80.jpeg" style="width:100%" onclick="onClick(this)" alt="Elevă a liceului"> 
+      <img src="galerie/81.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa mică">  
+      <img src="galerie/84.jpeg" style="width:100%" onclick="onClick(this)" alt="Trupa mică"> 
+      <img src="galerie/87.jpeg" style="width:100%" onclick="onClick(this)" alt="Poliția în liceul nostru"> 
+      <img src="galerie/36.jpeg" style="width:100%" onclick="onClick(this)" alt="Eveniment tradițional"> 
+      <img src="galerie/35.jpeg" style="width:100%" onclick="onClick(this)" alt="Hora liceului"> 
+    </divee>
+  </divee>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+   <!--map-->
+<!-- End page content -->
+</div>
+<br>
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container "><p align="middle" >© 2019 Liceul Tehnologic "Petrache Poenaru" - Bălcești | Toate drepturile rezervate. 
+  Website realizat de <a href="https://www.instagram.com/deqalex" title="Alexandru" target="_blank" class="w3-hover-opacity">un elev</a> al liceului.</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

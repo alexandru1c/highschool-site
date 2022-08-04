@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Liceul Tehnologic "Petrache Poenaru"</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+<img src="ltpp.png"style="position:absolute;left:80em;top:1em;"width="300"height="200">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:320px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Harta site-ului</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-16"><b><center>Liceul Tehnologic</center>"Petrache Poenaru"</b></h3> 
+  </div>
+  <div><p style="margin-left:1.6cm; margin-top:0;padding-top:0; color:rgb(48, 53, 63)">harta site-ului</p></div>
+  <div><hr style="background-color:white;"></div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Acasă</a> 
+    <div><hr style="background-color:white;"></div>
+    <div><p align="center"style="padding-top:0; color:rgb(48, 53, 63)">Resurse</p></div>
+    <a href="prezentare.pptx" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Prezentarea liceului nostru</a>
+    <a href="plan.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Planul de actiune al școlii (2014-2020)</a>
+    <a href="pliant.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Oferta educațională - școala profesională</a>
+    <a href="roi.pdf" target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Regulament de ordine interioară</a>
+    <a href="statut.pdf"target="_blank" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Statutul Elevului</a> 
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Liceul Tehnologic "Petrache Poenaru"</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:40px" id="showcase">
+     <h1 class="w3-jumbo"><b style="font-size:40px">Liceul Tehnologic "Petrache Poenaru" Bălcești</b></h1>
+
+
+
+    <h1 class="w3-xxlarge w3-text-red"><b>Evenimente</b></h1>
+    <hr style="width:1250px;border:1px solid red" class="w3-round">
+  </div>
+  <h4 align="center">Aici vor fi postate viitoarele evenimente ce vor lua parte în liceul nostru. </h4>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    </div>
+
+    <div class="w3-half">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+   <!--map-->
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container " style="position:absolute; bottom:-50px;left:500px;border-radius:6px"><p>© 2019 Liceul Tehnologic "Petrache Poenaru" - Bălcești | Toate drepturile rezervate. 
+  Website realizat de <a href="https://www.instagram.com/deqalex" title="Alexandru" target="_blank" class="w3-hover-opacity">un elev</a> al liceului.</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
